@@ -6,7 +6,7 @@ A simple demo for TNTSearch full text search engine.
 
 ###usage
 
-1.  update the `composer.phar` file to install TNTSearch dependence
+1. install TNTSearch dependence by adding this to the Terminal from the root of the demo folder
 ```
 composer update
 ```
@@ -28,7 +28,7 @@ $tnt->loadConfig([
 ```php
 $indexer = $tnt->createIndex('articles.index');
 $indexer->query('SELECT id, title, article, slug FROM articles;');
-//$indexer->setLanguage('german'); // Select language OR No  language $indexer->setLanguage('no');
+//$indexer->setLanguage('german'); // Select language OR disable language $indexer->setLanguage('no');
 $indexer->run();
 exit();
 //you should use this code only once for creating the index file. After that you should delete the code
