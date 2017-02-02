@@ -7,7 +7,9 @@ A simple demo for TNTSearch full text search engine.
 ###usage
 
 1.  update the `composer.phar` file to install TNTSearch dependence
-    `composer update`
+```
+composer update
+```
 2.  Import database structure to you database in `search.sql` file
 3.  add your database Configuration `start.php` file
 ```php
